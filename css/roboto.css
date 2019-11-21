@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+}
+
+header, footer {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom:1rem;
+    border-bottom: 2px solid #255e58;
+}
+
+footer {
+    width: 100%;
+    border-top: 2px solid #255e58;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.topmenu, .bottommenu {
+    display: flex;
+    justify-content: center;
+}
+
+.topmenu li, .bottommenu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.topmenu li a, .bottommenu li a, #home {
+    color: #255e58;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    transition: .2s ease;
+    padding-left: 0.5rem;
+}
+
+.topmenu li a:hover, .bottommenu li a:hover {
+    border-left: 2px solid 	#255e58;
+}
+
+#home {
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    padding: 0;
+}
+
+section {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#roboto, #styles, #chars, #design {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#roboto p {
+    margin: 0;
+    text-align: justify;
+}
+
+div.columns {
+    line-height: 1.5rem;
+    float: left;
+    columns: 300px auto;   
+}
+
+#chars {
+    columns: 2;
+}
+
+#chars p {
+    letter-spacing: 0.5rem;
+    line-height: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.hiku {
+    width: 500px;
+}
+
+/* CONTENT*/
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.font-variants {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0;
+    letter-spacing: 1.5;
+}
+
+.font-variants .thin {
+    font-weight: 100;
+}
+
+.font-variants .italic {
+    font-style: italic;
+}
+
+.font-variants .light {
+    font-weight: 300;
+}
+
+.font-variants .medium {
+    font-weight: 500;
+}
+
+.font-variants .bold {
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 800px) {
+    html {
+        overflow-y: scroll;
+    }
+    main{
+        flex-direction:column;
+    }
+    
+    footer {
+        visibility: hidden;
+    }
+    header {
+        align-items: right;
+    }
+    .topmenu li a {
+        font-size: 1rem;
+        align-items: right;
+        padding-left: 0.5;
+        margin: 0;
+    }
+    #roboto, #styles, #chars, #design {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #roboto {
+        line-height: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .robertson {
+        width: 100vw;
+    }
+    .hiku {
+        width: 100vw;
+    }
+}

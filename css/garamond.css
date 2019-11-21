@@ -1,0 +1,202 @@
+* {
+    box-sizing:border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    
+}
+
+body {
+    font-family: 'Cormorant Garamond';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+    
+}
+
+header, footer {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #a31a2d;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #a31a2d;
+}
+
+.topmenu, .bottommenu {
+    display: flex;
+    justify-content: center;
+}
+
+.topmenu li, .bottommenu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.topmenu li a, .bottommenu li a, #home {
+    color: #a31a2d;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    transition: .2s ease;
+    padding-left: 0.5rem;
+}
+
+.topmenu li a:hover, .bottommenu li a:hover {
+    border-left: 2px solid #a31a2d;
+}
+
+#home {
+    font-weight: 700;
+    position:absolute;
+    left:20px;
+    top:0;
+    padding:0;
+    font-weight: 700;
+}
+
+section {
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#garamond, #chars, #styles, #design {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#garamond p {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+#chars p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 1rem;
+    padding: 0;
+    margin: 0,5;
+    font-weight: 500;
+}
+
+.formula {
+    font-size: 2rem;
+}
+
+.cloude {
+   transition: .5s ease;
+}
+
+.shakespeare {
+    width: 650px;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+/* CONTENT*/
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+div p {
+    
+    line-height: 1.5rem;
+    float: left;
+    column: 2;
+}
+
+.font-variants {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0;
+    margin: 1rem;
+    letter-spacing: 1.5rem;
+}
+
+.font-variants .thin {
+    font-weight: 100;
+    padding-bottom: 0.5rem;
+}
+
+.font-variants .italic {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.font-variants .light {
+    font-weight: 300;
+}
+
+.font-variants .medium {
+    font-weight: 500;
+}
+
+.font-variants .bold {
+    font-weight: 700;
+}
+
+
+
+
+@media (max-width: 800px) {
+    html {
+        overflow-y: scroll;
+    }
+    main {
+        flex-direction:column;
+    }
+    footer {
+        visibility: hidden;
+    }
+    .topmenu li a {
+        align-items: center;
+        padding: 0.5;
+        margin: 0;
+    }
+    .shakespeare {
+        width: 100vw;
+    }
+    .cloude {
+        width: 100vw;
+    }
+    #chars p, .font-variants {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;
+    }
+}

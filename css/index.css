@@ -1,0 +1,128 @@
+*{
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 0;
+}
+ 
+header {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+footer {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+#down, #top {
+    color: black;
+    padding-left: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#type {
+    text-align: right;
+    position: absolute;
+    padding: 0;
+    right: 1rem;
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.5rem;
+}
+
+.roboto, .garamond {
+    width: 100vw;
+    height: 68vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.roboto {
+    font-family: 'Roboto';
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid white;
+}
+
+.garamond { 
+    font-family: 'Cormorant Garamond';
+}
+
+.pen {
+    border-bottom: 2px solid white;
+    min-width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight:600;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.roboto h1, .roboto p {
+    color: black;
+}
+
+.garamond h1, .garamond p {
+    color: black;
+}
+
+div a {
+    text-decoration: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom:1rem;
+    padding-right: 2rem;
+    padding-left:4px;
+}
+
+li a {
+    color: black;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.roboto li a:hover, .garamond li a:hover {
+    border-left: 2px solid black;
+}
+
+@media (max-width: 800px) {
+    .roboto, .garamond {
+        height: 50vh;
+        width: 100vw;
+    }
+    .roboto {
+        border-bottom: none;
+    }
+    li a {
+        visibility: hidden;
+    }
+    div {
+        min-width: 100vw;
+    }
+}
